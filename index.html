@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+    </style>
+</head>
+<body>
 
+    <header class="bg-white shadow-sm">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex-shrink-0">
+                <a href="#" class="text-2xl font-bold text-gray-900">Mon Site</a>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Accueil</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">À propos</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Services</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button class="text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+        <section class="text-center py-20 rounded-lg shadow-lg bg-white">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900">Bienvenue sur Mon Site</h1>
+            <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+                Ceci est une page d'accueil simple et élégante, conçue avec Tailwind CSS pour un design moderne et réactif.
+            </p>
+            <a href="#" class="mt-8 inline-block px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 transition-colors duration-200">
+                Commencer
+            </a>
+        </section>
+    </main>
+
+</body>
+</html>
