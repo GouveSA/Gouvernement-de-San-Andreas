@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qui nous sommes ?</title>
+    <!-- Tailwind CSS CDN pour un style rapide et facile -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a1a1a;
+            color: #e5e5e5;
+        }
+        /* Style pour les images de logo afin de s'assurer qu'elles sont bien mises à l'échelle */
+        .logo-image {
+            height: 40px; /* Ajustez la hauteur au besoin */
+            width: auto;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- Barre de Navigation -->
+    <header class="bg-[#1f1f1f] shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo ou nom du site -->
+            <a href="#" class="flex items-center space-x-2">
+                <!-- L'URL directe de Google Drive est maintenant utilisée -->
+                <img src="https://lh3.googleusercontent.com/d/1vEE26vEz8mPfyPBBfh3IqxZ2ZHC8tzHo" alt="Logo du parti politique" class="logo-image rounded-full">
+            </a>
+            
+            <!-- Liens de navigation -->
+            <ul class="flex-grow flex justify-center space-x-8 text-sm font-medium">
+                <li><a href="index.html" class="hover:text-white transition-colors duration-300">Accueil</a></li>
+                <li><a href="Qui_nous_sommes.html" class="hover:text-white transition-colors duration-300 border-b-2 border-transparent border-b-[#f5d947] pb-1">Qui nous sommes ?</a></li>
+                <li><a href="Programme.html" class="hover:text-white transition-colors duration-300">Programme</a></li>
+                <li><a href="Comment_nous_soutenir.html" class="hover:text-white transition-colors duration-300">Comment nous soutenir</a></li>
+                <li><a href="Contacts.html" class="hover:text-white transition-colors duration-300">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenu de la page "Qui nous sommes ?" -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <!-- Section de l'équipe dirigeante -->
+        <section class="my-16">
+            <h2 class="text-3xl md:text-4xl font-semibold text-center mb-12">Rencontrez nos leaders</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Aliénor Nowak -->
+                <div class="bg-[#1f1f1f] rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/400x300/4a5568/a0aec0?text=Aliénor+Nowak" alt="Photo d'Aliénor Nowak" class="w-full h-48 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-[#f5d947]">Aliénor Nowak</h3>
+                        <p class="text-gray-400">Fondatrice & Candidate principale</p>
+                        <p class="mt-4 text-sm text-gray-300">Aliénor est la fondatrice du parti. Elle est animée par une passion pour la justice sociale et un désir profond de servir la communauté. Sa vision est le moteur de notre mouvement.</p>
+                    </div>
+                </div>
+                <!-- Everett Harrington -->
+                <div class="bg-[#1f1f1f] rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/400x300/4a5568/a0aec0?text=Everett+Harrington" alt="Photo d'Everett Harrington" class="w-full h-48 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-[#f5d947]">Everett Harrington</h3>
+                        <p class="text-gray-400">Candidat au poste de vice-gouverneur</p>
+                        <p class="mt-4 text-sm text-gray-300">Everett est le candidat au poste de vice-gouverneur. Son expérience et sa perspicacité sont essentielles pour guider notre programme et nos initiatives sur le terrain.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section "Notre Histoire" -->
+        <section class="my-16">
+            <h2 class="text-3xl md:text-4xl font-semibold text-center mb-8">Notre Histoire</h2>
+            <div class="max-w-4xl mx-auto bg-[#1f1f1f] p-8 rounded-xl shadow-lg">
+                <p class="text-lg text-gray-300 leading-relaxed text-justify">
+                    Le parti "Rally for a Greater San Andreas" a été fondé par Aliénor Nowak en 2021 en vue des élections en Californie, qu'elle a brillamment remportées. Le nom actuel du parti a été adopté suite à un changement de géolocalisation pour refléter sa nouvelle mission. Animée par une conviction profonde que la politique doit être au service des citoyens, notre mouvement vise à rassembler les forces vives de la région pour construire un avenir prospère, juste et équitable pour tous. Nous croyons en une approche pragmatique et collaborative pour résoudre les défis de notre temps.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de Page -->
+    <footer class="bg-[#1f1f1f] text-center p-4 mt-8">
+        <div class="container mx-auto px-4">
+            <!-- Copyright et informations de base -->
+            <p class="text-sm text-gray-400">&copy; 2025 Rally for a Greater San Andreas. Tous droits réservés.</p>
+            
+            <!-- Liens supplémentaires si nécessaire -->
+            <div class="mt-2 text-sm">
+                <a href="Politique_de_confidentialité.html" class="text-gray-400 hover:text-white mx-2 transition-colors duration-300">Politique de confidentialité</a>
+                <span class="text-gray-600">|</span>
+                <a href="Conditions_d_utilisation.html" class="text-gray-400 hover:text-white mx-2 transition-colors duration-300">Conditions d'utilisation</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
 
