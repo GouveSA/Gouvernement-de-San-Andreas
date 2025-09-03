@@ -3,51 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page d'accueil</title>
+    <title>Barre de Navigation et Pied de Page</title>
+    <!-- Tailwind CSS CDN pour un style rapide et facile -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6;
-            color: #1f2937;
+            background-color: #1a1a1a;
+            color: #e5e5e5;
+        }
+        /* Style pour les images de logo afin de s'assurer qu'elles sont bien mises à l'échelle */
+        .logo-image {
+            height: 40px; /* Ajustez la hauteur au besoin */
+            width: auto;
         }
     </style>
 </head>
-<body>
+<body class="flex flex-col min-h-screen">
 
-    <header class="bg-white shadow-sm">
-        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <div class="flex-shrink-0">
-                <a href="#" class="text-2xl font-bold text-gray-900">Mon Site</a>
-            </div>
-            <div class="hidden md:flex space-x-8">
-                <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Accueil</a>
-                <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">À propos</a>
-                <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Services</a>
-                <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Contact</a>
-            </div>
-            <div class="md:hidden">
-                <button class="text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900">
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
+    <!-- Barre de Navigation -->
+    <header class="bg-[#1f1f1f] shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo ou nom du site -->
+            <a href="#" class="flex items-center space-x-2">
+                <!-- L'URL directe de Google Drive est maintenant utilisée -->
+                <img src="https://lh3.googleusercontent.com/d/1vEE26vEz8mPfyPBBfh3IqxZ2ZHC8tzHo" alt="Logo de l'entreprise" class="logo-image rounded-full">
+            </a>
+            
+            <!-- Liens de navigation -->
+            <ul class="flex-grow flex justify-center space-x-8 text-sm font-medium">
+                <li><a href="index.html" class="hover:text-white transition-colors duration-300 border-b-2 border-transparent border-b-[#f5d947] pb-1">Accueil</a></li>
+                <li><a href="Qui_nous_sommes.html" class="hover:text-white transition-colors duration-300">Qui nous sommes ?</a></li>
+                <li><a href="Programme.html" class="hover:text-white transition-colors duration-300">Programme</a></li>
+                <li><a href="Comment_nous_soutenir.html" class="hover:text-white transition-colors duration-300">Comment nous soutenir</a></li>
+                <li><a href="Contacts.html" class="hover:text-white transition-colors duration-300">Contacts</a></li>
+            </ul>
+
         </nav>
     </header>
 
-    <main class="container mx-auto px-4 sm:px-6 lg:px-8 mt-10">
-        <section class="text-center py-20 rounded-lg shadow-lg bg-white">
-            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900">Bienvenue sur Mon Site</h1>
-            <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-                Ceci est une page d'accueil simple et élégante, conçue avec Tailwind CSS pour un design moderne et réactif.
+    <!-- Contenu de la page -->
+    <main class="flex-grow container mx-auto p-8">
+        
+        <!-- Section d'introduction/Héros -->
+        <section class="text-center my-16">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-[#f5d947] mb-4 drop-shadow-md">Rally for a Greater San Andreas</h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto">
+                Rejoignez le mouvement pour un San Andreas plus fort. Notre parti s'engage à bâtir un avenir prospère et équitable pour tous les citoyens de l'État.
             </p>
-            <a href="#" class="mt-8 inline-block px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 transition-colors duration-200">
-                Commencer
-            </a>
+            <div class="mt-8">
+                <a href="Programme.html" class="bg-[#f5d947] text-[#1a1a1a] font-bold py-3 px-8 rounded-full shadow-lg hover:bg-yellow-400 transition-colors duration-300">Découvrir notre programme</a>
+            </div>
         </section>
+
+        <!-- Section "À propos" -->
+        <section class="my-20 p-8 bg-[#1f1f1f] rounded-xl shadow-lg">
+            <h2 class="text-4xl font-bold text-center text-white mb-8">Notre Mission</h2>
+            <div class="flex flex-col items-center">
+                <div class="text-lg text-gray-300 space-y-4 text-center">
+                    <p>Le parti "Rally for a Greater San Andreas" est né d'une volonté de changement. Nous nous engageons à lutter pour la justice sociale, la croissance économique durable et la protection de l'environnement, en mettant toujours les citoyens au cœur de nos décisions.</p>
+                    <p>Nous pensons que la collaboration et le dialogue sont essentiels pour surmonter les défis. Notre mission est de créer un San Andreas où chaque individu a la possibilité de s'épanouir et de contribuer à la grandeur de notre État.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section des principes -->
+        <section class="my-20">
+            <h2 class="text-4xl font-bold text-center text-white mb-8">Nos principes fondamentaux</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Principe 1 -->
+                <div class="bg-[#1f1f1f] rounded-xl shadow-lg p-6 text-center">
+                    <div class="text-5xl text-[#f5d947] mb-4">⚖️</div>
+                    <h3 class="text-2xl font-bold text-white">Justice Sociale</h3>
+                    <p class="mt-4 text-gray-300">Nous croyons en une société où chacun a les mêmes chances, indépendamment de son origine ou de son milieu.</p>
+                </div>
+                <!-- Principe 2 -->
+                <div class="bg-[#1f1f1f] rounded-xl shadow-lg p-6 text-center">
+                    <div class="text-5xl text-[#f5d947] mb-4">🌱</div>
+                    <h3 class="text-2xl font-bold text-white">Durabilité Écologique</h3>
+                    <p class="mt-4 text-gray-300">Nous nous engageons à protéger les ressources naturelles de San Andreas pour les générations futures.</p>
+                </div>
+                <!-- Principe 3 -->
+                <div class="bg-[#1f1f1f] rounded-xl shadow-lg p-6 text-center">
+                    <div class="text-5xl text-[#f5d947] mb-4">💼</div>
+                    <h3 class="text-2xl font-bold text-white">Croissance Économique</h3>
+                    <p class="mt-4 text-gray-300">Nous visons à créer des emplois stables et à soutenir les petites entreprises pour une économie forte.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section d'appel à l'action -->
+        <section class="bg-[#f5d947] text-[#1a1a1a] p-12 rounded-xl text-center shadow-lg my-20">
+            <h2 class="text-4xl font-bold mb-4">Rejoignez le mouvement</h2>
+            <p class="text-lg max-w-3xl mx-auto">
+                Votre voix est notre force. Rejoignez-nous pour construire un San Andreas meilleur et plus juste.
+            </p>
+            <a href="Contacts.html" class="mt-6 inline-block bg-[#1a1a1a] text-[#f5d947] font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-800 transition-colors duration-300">S'engager maintenant</a>
+        </section>
+
     </main>
+
+    <!-- Pied de Page -->
+    <footer class="bg-[#1f1f1f] text-center p-4 mt-8">
+        <div class="container mx-auto px-4">
+            <!-- Copyright et informations de base -->
+            <p class="text-sm text-gray-400">&copy; 2025 Rally for a Greater San Andreas. Tous droits réservés.</p>
+            
+            <!-- Liens supplémentaires si nécessaire -->
+            <div class="mt-2 text-sm">
+                <a href="Politique_de_confidentialité.html" class="text-gray-400 hover:text-white mx-2 transition-colors duration-300">Politique de confidentialité</a>
+                <span class="text-gray-600">|</span>
+                <a href="Conditions_d_utilisation.html" class="text-gray-400 hover:text-white mx-2 transition-colors duration-300">Conditions d'utilisation</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
