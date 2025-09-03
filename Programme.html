@@ -1,1 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programme - Rally for a Greater San Andreas</title>
+    <!-- Tailwind CSS CDN pour un style rapide et facile -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a1a1a;
+            color: #e5e5e5;
+        }
+        .logo-image {
+            height: 40px;
+            width: auto;
+        }
+        .section-title {
+            color: #f5d947;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .card {
+            background-color: #2a2a2a;
+            border: 1px solid #333;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .collapsible-header {
+            cursor: pointer;
+            user-select: none;
+        }
+        .collapsible-icon {
+            transition: transform 0.3s ease;
+        }
+        .rotate-90 {
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- Barre de Navigation -->
+    <header class="bg-[#1f1f1f] shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo ou nom du site -->
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="https://lh3.googleusercontent.com/d/1vEE26vEz8mPfyPBBfh3IqxZ2ZHC8tzHo" alt="Logo de l'entreprise" class="logo-image rounded-full">
+            </a>
+            
+            <!-- Liens de navigation -->
+            <ul class="flex-grow flex justify-center space-x-8 text-sm font-medium">
+                <li><a href="index.html" class="hover:text-white transition-colors duration-300">Accueil</a></li>
+                <li><a href="Qui_nous_sommes.html" class="hover:text-white transition-colors duration-300">Qui nous sommes ?</a></li>
+                <li><a href="Programme.html" class="hover:text-white transition-colors duration-300 border-b-2 border-transparent border-b-[#f5d947] pb-1">Programme</a></li>
+                <li><a href="Comment_nous_soutenir.html" class="hover:text-white transition-colors duration-300">Comment nous soutenir</a></li>
+                <li><a href="Contacts.html" class="hover:text-white transition-colors duration-300">Contacts</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- Contenu de la page Programme -->
+    <main class="flex-grow container mx-auto p-8">
+        <h1 class="text-5xl font-extrabold text-center mt-8 mb-16 section-title">Notre Programme pour San Andreas</h1>
+
+        <!-- Section 1: Sécurité et Paix Durable -->
+        <section class="my-12 p-8 card rounded-lg">
+            <div class="collapsible-header flex justify-between items-center">
+                <h2 class="text-3xl font-bold mb-4">1. Sécurité et Paix Durable</h2>
+                <svg class="collapsible-icon w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </div>
+            <div class="collapsible-content hidden">
+                <p class="text-lg text-gray-300">
+                    Modernisation des forces de sécurité : Mettre en œuvre un plan national de modernisation des équipements des forces de l’ordre pour qu’elles puissent répondre efficacement aux défis contemporains.
+                    <br>
+                    Coopération internationale : Développer des partenariats avec des pays voisins et des organisations internationales pour lutter contre le terrorisme, le crime organisé et la cybercriminalité.
+                    <br>
+                    Formation des forces de l’ordre : Créer un programme de formation continue pour les forces de sécurité, axé sur le respect des droits humains, la désescalade des conflits et l’intervention en situation de crise.
+                    <br>
+                    Programme de coopération transfrontalière : Développer un cadre de coopération avec les pays voisins pour améliorer la gestion des frontières, le commerce et la sécurité régionale.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 2: Croissance Économique et Emploi -->
+        <section class="my-12 p-8 card rounded-lg">
+            <div class="collapsible-header flex justify-between items-center">
+                <h2 class="text-3xl font-bold mb-4">2. Croissance Économique et Emploi</h2>
+                <svg class="collapsible-icon w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </div>
+            <div class="collapsible-content hidden">
+                <p class="text-lg text-gray-300">
+                    Plan national d’infrastructures : Lancer un programme d’investissement de grande envergure pour moderniser les routes, les chemins de fer, les ports et les aéroports, facilitant ainsi le commerce et les déplacements.
+                    <br>
+                    Accès universel à l’Internet haut débit : Mettre en place un plan pour garantir un accès à Internet dans toutes les régions, y compris les zones rurales, afin de favoriser l’innovation et le télétravail.
+                    <br>
+                    Programmes de formation adaptés aux besoins du marché : En partenariat avec le secteur privé, créer des programmes de formation pour les secteurs en plein essor (technologie, énergie, agriculture durable) afin de faciliter l’emploi des jeunes et la reconversion des travailleurs.
+                    <br>
+                    Apprentissage tout au long de la vie : Développer un cadre légal qui encourage la formation continue pour que chaque citoyen puisse améliorer ses compétences tout au long de sa carrière.
+                    <br>
+                    Éducation entrepreneuriale : Introduire des modules d’éducation entrepreneuriale dans les écoles secondaires et les universités afin d’encourager l’esprit d’entreprise dès le plus jeune âge.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 3: Santé et Bien-Être -->
+        <section class="my-12 p-8 card rounded-lg">
+            <div class="collapsible-header flex justify-between items-center">
+                <h2 class="text-3xl font-bold mb-4">3. Santé et Bien-Être</h2>
+                <svg class="collapsible-icon w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </div>
+            <div class="collapsible-content hidden">
+                <p class="text-lg text-gray-300">
+                    Renforcement du réseau de centres de santé : Moderniser les infrastructures hospitalières, en particulier dans les zones rurales et sous-équipées, pour garantir un accès équitable aux soins médicaux.
+                    <br>
+                    Augmentation du personnel médical : Créer un plan national de recrutement et de formation des personnels de santé pour faire face aux pénuries dans les hôpitaux.
+                    <br>
+                    Soutien aux soins à domicile : Développer un programme de soutien pour les personnes âgées ou en situation de handicap, avec un accent sur les soins à domicile.
+                    <br>
+                    Campagnes de sensibilisation : Lancer des campagnes de prévention pour lutter contre les principales causes de mortalité évitables (maladies cardiovasculaires, diabète, etc.) et promouvoir un mode de vie sain.
+                    <br>
+                    Accès aux soins de santé mentale : Créer des centres de santé mentale dans chaque région, avec des équipes de psychologues et de psychiatres accessibles à tous.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 4: Éducation et Inclusion -->
+        <section class="my-12 p-8 card rounded-lg">
+            <div class="collapsible-header flex justify-between items-center">
+                <h2 class="text-3xl font-bold mb-4">4. Éducation et Inclusion</h2>
+                <svg class="collapsible-icon w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </div>
+            <div class="collapsible-content hidden">
+                <p class="text-lg text-gray-300">
+                    Écoles gratuites et de qualité : Garantir la gratuité des manuels scolaires et des fournitures de base pour les familles modestes.
+                    <br>
+                    Construction d’écoles dans les zones rurales : Accélérer la construction d’écoles dans les zones rurales afin que chaque enfant ait accès à une éducation de qualité proche de chez lui.
+                    <br>
+                    Réforme des programmes scolaires : Moderniser les programmes pour inclure des compétences du XXIe siècle, telles que le numérique, l’esprit critique et la collaboration.
+                    <br>
+                    Bourses pour les jeunes défavorisés : Accorder des bourses d’études aux jeunes issus de milieux modestes ou vivant dans des zones historiquement touchées par les conflits.
+                    <br>
+                    Soutien scolaire gratuit : Mettre en place un réseau national de soutien scolaire pour les élèves en difficulté, avec des tuteurs bénévoles ou rémunérés.
+                    <br>
+                    Intégration des enfants en situation de handicap : Renforcer les infrastructures scolaires pour permettre l’accueil des enfants en situation de handicap, avec des enseignants formés et des équipements adaptés.
+                    <br>
+                    Promotion de la diversité et de l’inclusion : Instaurer des programmes éducatifs qui enseignent la diversité, la tolérance et l’inclusion pour lutter contre toutes les formes de discrimination.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 5: Développement Territorial et Équilibre Régional -->
+        <section class="my-12 p-8 card rounded-lg">
+            <div class="collapsible-header flex justify-between items-center">
+                <h2 class="text-3xl font-bold mb-4">5. Développement Territorial et Équilibre Régional</h2>
+                <svg class="collapsible-icon w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </div>
+            <div class="collapsible-content hidden">
+                <p class="text-lg text-gray-300">
+                    Plan d’aménagement du territoire : Élaborer un plan national pour développer les infrastructures de transport et de communication dans les régions isolées ou désavantagées.
+                    <br>
+                    Mobilité urbaine et rurale : Investir dans les transports en commun écologiques (bus électriques, trains régionaux) pour faciliter la mobilité des citoyens.
+                    <br>
+                    Développement numérique : Étendre le réseau de fibre optique et d’accès à Internet dans toutes les régions, avec une priorité pour les zones rurales.
+                    <br>
+                    Valorisation du patrimoine culturel et naturel : Développer des circuits touristiques autour du patrimoine historique, culturel et naturel, avec une approche respectueuse de l’environnement.
+                    <br>
+                    Soutien aux initiatives locales : Encourager les projets de tourisme communautaire et les petites entreprises locales pour créer des emplois dans le secteur.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 6: Soutien aux Événements et Associations -->
+        <section class="my-12 p-8 card rounded-lg">
+            <div class="collapsible-header flex justify-between items-center">
+                <h2 class="text-3xl font-bold mb-4">6. Soutien aux Événements et Associations</h2>
+                <svg class="collapsible-icon w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </div>
+            <div class="collapsible-content hidden">
+                <p class="text-lg text-gray-300">
+                    Subventions accessibles : Mettre en place un fonds pour financer les associations locales, les événements culturels, sportifs et communautaires.
+                    <br>
+                    Procédures simplifiées : Faciliter l’accès à ces financements via un guichet unique, afin de réduire la bureaucratie et permettre aux petites structures d’en bénéficier.
+                    <br>
+                    Soutien aux manifestations culturelles : Financer des festivals, expositions et événements culturels dans toutes les régions pour promouvoir la diversité et le patrimoine local.
+                    <br>
+                    Encouragement du sport local : Subventionner les associations sportives pour développer les infrastructures et organiser des compétitions accessibles à tous.
+                    <br>
+                    Incitations fiscales pour le mécénat : Encourager les entreprises à soutenir les initiatives locales par le biais de dons et de mécénat, avec des avantages fiscaux à la clé.
+                    <br>
+                    Soutien aux projets innovants : Accorder des aides spéciales pour les projets associatifs innovants, notamment ceux favorisant l’inclusion sociale, la transition écologique et les initiatives numériques.
+                </p>
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="my-12 p-8 card rounded-lg">
+            <div class="collapsible-header flex justify-between items-center">
+                <h2 class="text-3xl font-bold mb-4">Conclusion</h2>
+                <svg class="collapsible-icon w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </div>
+            <div class="collapsible-content hidden">
+                <p class="text-lg text-gray-300">
+                    Aliénor Nowak incarne la stabilité et la prospérité. Son programme ambitieux s’appuie sur des années de leadership réussi et vise à garantir un avenir de paix, de sécurité et de développement durable pour tous. Ensemble, construisons un avenir plus sûr, plus prospère et plus inclusif.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pied de Page -->
+    <footer class="bg-[#1f1f1f] text-center p-4 mt-8">
+        <div class="container mx-auto px-4">
+            <!-- Copyright et informations de base -->
+            <p class="text-sm text-gray-400">&copy; 2025 Rally for a Greater San Andreas. Tous droits réservés.</p>
+            
+            <!-- Liens supplémentaires si nécessaire -->
+            <div class="mt-2 text-sm">
+                <a href="Politique_de_confidentialité.html" class="text-gray-400 hover:text-white mx-2 transition-colors duration-300">Politique de confidentialité</a>
+                <span class="text-gray-600">|</span>
+                <a href="Conditions_d_utilisation.html" class="text-gray-400 hover:text-white mx-2 transition-colors duration-300">Conditions d'utilisation</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const collapsibleHeaders = document.querySelectorAll('.collapsible-header');
+            
+            collapsibleHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const content = header.nextElementSibling;
+                    const icon = header.querySelector('.collapsible-icon');
+
+                    content.classList.toggle('hidden');
+                    icon.classList.toggle('rotate-90');
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
 
